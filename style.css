@@ -122,20 +122,81 @@ html{
     border-radius: 2.5rem;
     padding: 2.5rem;
     box-shadow: 0 1.4rem 8rem rgba(40, 40, 40, .8);
+    position: relative;
+}
+.blog-card-content{
+    position: absolute;
+    top: 1%;
+    left: 15%;
+    transform: scale(0.8);
+}
+.blog-card-content h1{
+    font-family: var(ff1);
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.blog-card-content h3{
+    font-family: var(ff2);
+    font-size: 2rem;
+    color: #999;
+    margin-bottom: 2rem;
+}
+.blog-card-content p{
+    font-family: var(ff2);
+    font-size:1.6rem;
+    color: #777;
+    width: 35rem;
+    margin-bottom: 3rem;
+}
+
+.card-btn{
+    width: 16rem;
+    height: 4rem;
+    background: linear-gradient(145deg,#6db093 0%, #008046 75% );
+    border: none;
+    color: #fff;
+    font-family: var(ff1);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
 }
 .blog-card-img{
     width: 30rem;
     height: 30rem;
+    background: linear-gradient(145deg,#6db093 0%, #008046 75% );
+    border-radius: 2rem;
+    position: absolute;
+    top: 15%;
+    left: -10rem;
+    transform: translateY(-50%) scale(0.6);
 }
 .blog-card-img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 2rem;
 }
 .blog-tours{
     display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 6rem;
+    left: 0;
 }
-
+.blog-tours-item{
+    border-radius: 1rem;
+    box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
 .tour-img{
     width: 25rem;
     height: 35rem;
